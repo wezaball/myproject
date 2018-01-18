@@ -1,0 +1,21 @@
+img {
+    margin-left: 350px;
+    margin-top: 20px;
+
+  }
+
+  .button {
+    background-color: rgb(3, 130, 248);
+    color: aliceblue;
+    padding: 5px 15px;
+    margin-left: 15px;
+  }
+
+  div {
+    padding-left: 500px;
+  }
+
+  a {
+    padding-left: 150px;
+
+  }

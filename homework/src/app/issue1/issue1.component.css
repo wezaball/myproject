@@ -1,0 +1,36 @@
+img {
+    margin-left: 350px;
+    margin-top: 20px;
+}
+a {
+    padding-left: 150px;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,
+td {
+    text-align: left;
+}
+th,
+td {
+    padding: 15px;
+}
+.button {
+    background-color: rgb(3, 130, 248);
+    color: aliceblue;
+    padding: 8px 55px;
+    margin-left: 15px;
+}
+table {
+    margin-left: 300px;
+}
+div {
+    margin-left: 150px;
+}
+i {
+    color: #ee0a0a;
+}

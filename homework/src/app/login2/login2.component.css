@@ -1,0 +1,28 @@
+.p1 {
+    margin: 250px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+b {
+    font-size: 25px;
+    font-style: inherit;
+}
+
+i {
+    font-size: x-large;
+    color: #e57373;
+}
+
+.button {
+    background-color: blue;
+    padding: 7px 130px;
+    color: aliceblue;
+    margin-top: 70px;
+}
+
+a {
+    color: rgb(15, 182, 168);
+}
