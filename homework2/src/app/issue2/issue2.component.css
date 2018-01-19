@@ -1,0 +1,17 @@
+img {
+    margin-left: 350px;
+    margin-top: 20px;
+
+  }
+
+  a {
+    padding-left: 150px;
+
+  }
+
+  .button {
+    background-color: rgb(43, 104, 236);
+    color: aliceblue;
+    padding: 5px 15px;
+    margin-left: 15px;
+  }

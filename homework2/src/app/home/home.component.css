@@ -1,0 +1,12 @@
+button {
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 800px;
+}
+.p1{
+    
+    background-image: url(image/w3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

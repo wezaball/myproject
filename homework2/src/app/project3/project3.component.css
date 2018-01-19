@@ -1,0 +1,16 @@
+img {
+    margin-left: 350px;
+    margin-top: 20px;
+
+}
+
+a {
+    padding-left: 150px;
+
+}
+
+div {
+    width: 2000px;
+    height: 750px;
+    overflow: auto;
+}
