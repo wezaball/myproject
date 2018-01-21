@@ -11,7 +11,13 @@ import { Project3Component } from './project3/project3.component';
 import { IssueComponent } from './issue/issue.component';
 import { Issue1Component } from './issue1/issue1.component';
 import { Issue2Component } from './issue2/issue2.component';
+import { LoginGuard } from './shared/user/login.guard';
+import { PrivateZoneComponent } from './pages/private-zone/private-zone.component';
 const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'home',
     component: HomeComponent
@@ -49,14 +55,21 @@ const routes: Routes = [
     component: Issue2Component
   },
   {
-    path: 'pic2',
-    component: Pic2Component
-  },
-  {
     path: '**',
     redirectTo: '/',
     pathMatch: 'full'
   },
+  {
+    path: 'private',
+    component: PrivateZoneComponent,
+    canActivate: [LoginGuard],
+    children: [
+      {
+        path: 'pic2',
+        component: Pic2Component
+      }
+    ]
+  }
 ];
 @NgModule({
   imports: [

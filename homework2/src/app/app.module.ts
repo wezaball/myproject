@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { Login1Component } from './component/login1/login1.component';
-import { MaterializeModule } from "angular2-materialize";
+import { MaterializeModule } from 'angular2-materialize';
 import { AppRoutingModule } from './/app-routing.module';
 import { Login2Component } from './login2/login2.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,7 +15,11 @@ import { Project3Component } from './project3/project3.component';
 import { IssueComponent } from './issue/issue.component';
 import { Issue1Component } from './issue1/issue1.component';
 import { Issue2Component } from './issue2/issue2.component';
-
+import { UserService } from './shared/user/user.service';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
+import { PrivateZoneComponent } from './pages/private-zone/private-zone.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,19 +32,19 @@ import { Issue2Component } from './issue2/issue2.component';
     Project3Component,
     IssueComponent,
     Issue1Component,
-    Issue2Component
-    
-    
-    
+    Issue2Component,
+    LoginComponent,
+    PrivateZoneComponent
   ],
   imports: [
     BrowserModule,
     MaterializeModule,
     RouterModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
